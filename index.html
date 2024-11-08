@@ -10,19 +10,21 @@
     <link rel="stylesheet" href="/Styles/style.css">
     <title>Home</title>
   </head>
-  <body>
-    <header class="inicio">
+  <body class="has-background-white">
+    <header class="inicio hero-body has-background-warning">
       <div class="title">
-        <h1>ANIME-RATE</h1>
+        <a href="/index.html">
+          <h1 class="is-size-1 has-text-left has-text-white">ANIME-RATE</h1>
+        </a>
       </div>
       <div class="nav-inicio">  
-        <a href="/paginas/catalogo.html" class="button is-white">
+        <a href="/paginas/catalogo.html" class="button is-primary is-rounded">
           Catalogo
         </a>
-        <a href="/paginas/reseñas.html" class="button is-white">
+        <a href="/paginas/reseñas.html" class="button is-white is-primary is-rounded">
           Reseña 
         </a>
-        <a href="" class="button is-white">
+        <a href="" class="button is-white is-primary is-rounded">
           Contacto
         </a>        
       </div>
@@ -30,29 +32,28 @@
     <section class="section-inicio">
       <div class="cuerpo-inicio">
         <div class="title2">
-          <h1>ANIME-RATE</h1>
+          <h1 class="is-size-1 has-text-weight-bold has-text-centered">ANIME-RATE</h1>
         </div>
         <div class="banner">
-          <ul>
-            <li>
-              <img src="/img-home/img-sliders/bleach.jpeg" alt="">
-            </li>
-            <li>
-              <img src="/img-home/img-sliders/blue-lock.png" alt="">
-            </li>
-            <li>
-              <img src="/img-home/img-sliders/cahin.png" alt="">
-            </li>
-          </ul>
+          <div class="slide">
+              <img src="/img-home/img-sliders/bleach.jpeg" id="slide-1">
+              <img src="/img-home/img-sliders/blue-lock.png" id="slide-2">
+              <img src="/img-home/img-sliders/cahin.png" id="slide-3">
+            </div>
+            <div class="slide-nav">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+              <a href="#slide-3"></a>
+            </div>
         </div>
       </div>
     </section>
     <section class="section2">
       <div class="title2">
-        <h2>LO MEJOR DE 2024</h2>
+        <h2 class="is-size-4">LO MEJOR DE 2024</h2>
       </div>
       <div class="description">
-          <p>Descripción de los animes recientes</p>
+          <p class="is-size-6">Descripción de los animes recientes</p>
       </div>
       <div class="imgs">
         <img src="/img-home/img-section/dandan.jpeg" alt="">
