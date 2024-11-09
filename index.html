@@ -11,7 +11,7 @@
     <title>Home</title>
   </head>
   <body class="has-background-white">
-    <header class="inicio hero-body has-background-warning">
+    <header class="inicio hero-body">
       <div class="title">
         <a href="/index.html">
           <h1 class="is-size-1 has-text-left has-text-white">ANIME-RATE</h1>
@@ -36,14 +36,27 @@
         </div>
         <div class="banner">
           <div class="slide">
+            <input type="radio" name="radio-btn" id="radio-1">
+            <input type="radio" name="radio-btn" id="radio-2">
+            <input type="radio" name="radio-btn" id="radio-3">
+          <div class="img first">
               <img src="/img-home/img-sliders/bleach.jpeg" id="slide-1">
+            </div>
+            <div class="img">
               <img src="/img-home/img-sliders/blue-lock.png" id="slide-2">
+            </div>
+            <div class="img">
               <img src="/img-home/img-sliders/cahin.png" id="slide-3">
             </div>
-            <div class="slide-nav">
-              <a href="#slide-1"></a>
-              <a href="#slide-2"></a>
-              <a href="#slide-3"></a>
+            <div class="slide-nav-auto">
+                <div class="a-b1"></div>
+                <div class="a-b2"></div>
+                <div class="a-b3"></div>
+            </div>
+            <div class="nav m">
+              <label for="radio1" class="m-btn"></label>
+              <label for="radio1" class="m-btn"></label>
+              <label for="radio1" class="m-btn"></label>
             </div>
         </div>
       </div>
@@ -60,5 +73,11 @@
         <img src="/img-home/img-section/ranman.webp" alt="">
       </div>
     </section>
+    <script type="text/javacript">
+      var counter=1;
+      setInterval(funtion(){
+        
+      }
+    </script>
   </body>
 </html>
