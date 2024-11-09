@@ -2,10 +2,18 @@
 *{
     box-sizing: border-box;
 }
-.navegacion{
-    background-color: white;
-    height: 6vw;    
+
+.navbar {
+background-color: #282248 !important;
+height: 4vw !important;
+color: white !important;
+
 }
+
+.navbar-item {
+    color: hsl(0deg 0% 100%) !important;
+}
+
 .reseña_principal{
     background-color: rgb(255, 90, 30);
     height: 40vw;
