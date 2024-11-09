@@ -2,23 +2,33 @@
 *{
     box-sizing: border-box;
 }
-<<<<<<< HEAD
 body{
     background-color: white;
 }
 .navegacion{
     color: black    ;
-=======
-
+}
 .navbar {
 background-color: #282248 !important;
 height: 4vw !important;
 color: white !important;
+}
 
+a.navbar-item:hover{
+    background-color: #7769c9 !important;
 }
 
 .navbar-item {
     color: hsl(0deg 0% 100%) !important;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: hsl(249.47deg 35.85% 20.78%) !important;
+        box-shadow: 0 .5em 1em hsla(var(--bulma-scheme-h), var(--bulma-scheme-s), var(--bulma-scheme-invert-l), .1);
+        padding: .5rem 0;
+    }
 }
 
 .reseña_principal{
@@ -133,7 +143,6 @@ color: white !important;
     position: relative;
     top: 7%;
     left: 6%;
->>>>>>> d9e461f1150fc9d59074d125b0d89dc7031ac34a
 }
 
 .title{
@@ -155,7 +164,6 @@ color: white !important;
     
 }
 
-<<<<<<< HEAD
 *{
     box-sizing: border-box;
 }
@@ -254,7 +262,6 @@ color: white !important;
 
 
 
-=======
 .banner-catalogo {
     position: relative;
 }
@@ -290,7 +297,6 @@ color: white !important;
 .galeria-catalogo{
     width: 80%;
     margin: 0 auto;
+    margin-top: 3vw;
 
 }
->>>>>>> 479e19a (primer avance del diseño del pagina  de catalogo)
->>>>>>> b6a152d49a276b6cebf2f272a13d9c4ec78a89e2
