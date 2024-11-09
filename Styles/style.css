@@ -2,130 +2,32 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-color: white;
+}
 .navegacion{
-    background-color: white;
-    height: 6vw;    
-}
-.reseña_principal{
-    background-color: rgb(255, 90, 30);
-    height: 40vw;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
-}
-.box{
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    position: relative;
-    left: 2vw;
-    top: 6vw;
-}
-.title{
-    grid-column: 3;
-    position: relative;
-    top: 3vw;
-}
-.subtitle{
-    grid-column: 2 / span 3;
-    grid-row: 2 / span 2;
-    background-color: white;
-    width: 90%;
-    height: 90%;
-    position: relative;
-    left: 5vw;
-    top: -6vw;
-    border-radius: 1em;
-}
-.mejores_capitulos{
-    background-color: rgb(204, 255, 0);
-    height: 50vw;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1,1fr);
-    
-}
-.box1{
-    
-    background-color: black;
-    width: 90%;
-    height: 90%;
-    border-radius: 1em;
-    position: relative;
-    left: 1.5vw;
-    top: 2.5vw;
-}
-.imagen_capitulox{
-    background-color: white;
-    width: 90%;
-    height: 50%;
-    position: relative;
-    left: 5%;
-    top: 5%;
-    border-radius: 1em;
-}
-.decripcion_capitulox{
-    width: 90%;
-    position: relative;
-    top: 7%;
-    left: 6%;
-}
-.box2{
-    
-    background-color: black;
-    width: 90%;
-    height: 90%;
-    border-radius: 1em;
-    position: relative;
-    left: 1.5vw;
-    top: 2.5vw;
-}
-.imagen_capituloxx{
-    background-color: white;
-    width: 90%;
-    height: 50%;
-    position: relative;
-    left: 5%;
-    top: 5%;
-    border-radius: 1em;
-}
-.decripcion_capituloxx{
-    width: 90%;
-    position: relative;
-    top: 7%;
-    left: 6%;
-}
-.box3{
-    
-    background-color: black;
-    width: 90%;
-    height: 90%;
-    border-radius: 1em;
-    position: relative;
-    left: 1.5vw;
-    top: 2.5vw;
-}
-.imagen_capituloxxx{
-    background-color: white;
-    width: 90%;
-    height: 50%;
-    position: relative;
-    left: 5%;
-    top: 5%;
-    border-radius: 1em;
-}
-.decripcion_capituloxxx{
-    width: 90%;
-    position: relative;
-    top: 7%;
-    left: 6%;
+    color: black    ;
 }
 
-.pie_de_pagina_derechos{
-    background-color: aquamarine;
-    height: 6vw;
-    color: black;
+.title{
+    position: relative;
+    top: 2vw;
+    left: 40vw;
 }
-=======
+.columns{
+    padding: 10px;
+}
+.box{
+    width: 25%;
+    position: relative;
+    left: 72%;
+}
+.footer{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+
 <<<<<<< HEAD
 *{
     box-sizing: border-box;
