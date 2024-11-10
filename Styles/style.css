@@ -3,14 +3,13 @@
     box-sizing: border-box;
 }
 body{
-<<<<<<< HEAD
+
     background-color: rgb(255, 255, 255);
 }
 
 .title.is-2{
     color: black;
     font-size: 2.5vw;
-=======
     background-color: white;
 }
 .navegacion{
@@ -38,127 +37,7 @@ a.navbar-item:hover{
         padding: .5rem 0;
     }
 }
-
-.reseña_principal{
-    background-color: rgb(255, 90, 30);
-    height: 40vw;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
-}
-.box{
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    position: relative;
-    left: 2vw;
-    top: 6vw;
-}
-.title{
-    grid-column: 3;
-    position: relative;
-    top: 3vw;
-}
-.subtitle{
-    grid-column: 2 / span 3;
-    grid-row: 2 / span 2;
-    background-color: white;
-    width: 90%;
-    height: 90%;
-    position: relative;
-    left: 5vw;
-    top: -6vw;
-    border-radius: 1em;
-}
-.mejores_capitulos{
-    background-color: rgb(204, 255, 0);
-    height: 50vw;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(1,1fr);
-    
-}
-.box1{
-    
-    background-color: black;
-    width: 90%;
-    height: 90%;
-    border-radius: 1em;
-    position: relative;
-    left: 1.5vw;
-    top: 2.5vw;
-}
-.imagen_capitulox{
-    background-color: white;
-    width: 90%;
-    height: 50%;
-    position: relative;
-    left: 5%;
-    top: 5%;
-    border-radius: 1em;
-}
-.decripcion_capitulox{
-    width: 90%;
-    position: relative;
-    top: 7%;
-    left: 6%;
-}
-.box2{
-    
-    background-color: black;
-    width: 90%;
-    height: 90%;
-    border-radius: 1em;
-    position: relative;
-    left: 1.5vw;
-    top: 2.5vw;
-}
-.imagen_capituloxx{
-    background-color: white;
-    width: 90%;
-    height: 50%;
-    position: relative;
-    left: 5%;
-    top: 5%;
-    border-radius: 1em;
-}
-.decripcion_capituloxx{
-    width: 90%;
-    position: relative;
-    top: 7%;
-    left: 6%;
-}
-.box3{
-    
-    background-color: black;
-    width: 90%;
-    height: 90%;
-    border-radius: 1em;
-    position: relative;
-    left: 1.5vw;
-    top: 2.5vw;
-}
-.imagen_capituloxxx{
-    background-color: white;
-    width: 90%;
-    height: 50%;
-    position: relative;
-    left: 5%;
-    top: 5%;
-    border-radius: 1em;
-}
-.decripcion_capituloxxx{
-    width: 90%;
-    position: relative;
-    top: 7%;
-    left: 6%;
-}
-
-.title{
->>>>>>> eb69b2ec4ddde30df116830f738a8cab375244c5
-    position: relative;
-    top: 2vw;
-    left: 40vw;
-}
+/* empieza lo de reseña  */
 .anime{
     color: rgb(0, 0, 0);
 }
@@ -192,10 +71,7 @@ a.navbar-item:hover{
     left: 0px;
     
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> eb69b2ec4ddde30df116830f738a8cab375244c5
+/* termina parte reseña  */
 *{
     box-sizing: border-box;
 }
