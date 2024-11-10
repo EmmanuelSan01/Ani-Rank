@@ -1,83 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="/Styles/style.css">
     <title>Home</title>
-  </head>
-  <body class="has-background-white">
-    <header class="inicio hero-body">
-      <div class="title">
-        <a href="/index.html">
-          <h1 class="is-size-1 has-text-left has-text-white">ANIME-RATE</h1>
-        </a>
-      </div>
-      <div class="nav-inicio">  
-        <a href="/paginas/catalogo.html" class="button is-primary is-rounded">
-          Catalogo
-        </a>
-        <a href="/paginas/reseñas.html" class="button is-white is-primary is-rounded">
-          Reseña 
-        </a>
-        <a href="" class="button is-white is-primary is-rounded">
-          Contacto
-        </a>        
-      </div>
-    </header>
-    <section class="section-inicio">
-      <div class="cuerpo-inicio">
-        <div class="title2">
-          <h1 class="is-size-1 has-text-weight-bold has-text-centered">ANIME-RATE</h1>
+<style>
+    .carousel{
+        overflow: hidden;
+    }
+</style>
+</head>
+
+<body class="has-background-white">
+    <!--  barra de navegacion -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                <img src="../imagenes/logo.png" alt="Logo" style="width: 100px;">
+            </div>
+
+            <!-- Menu hamburguesa -->
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-        <div class="banner">
-          <div class="slide">
-            <input type="radio" name="radio-btn" id="radio-1">
-            <input type="radio" name="radio-btn" id="radio-2">
-            <input type="radio" name="radio-btn" id="radio-3">
-          <div class="img first">
-              <img src="/img-home/img-sliders/bleach.jpeg" id="slide-1">
-            </div>
-            <div class="img">
-              <img src="/img-home/img-sliders/blue-lock.png" id="slide-2">
-            </div>
-            <div class="img">
-              <img src="/img-home/img-sliders/cahin.png" id="slide-3">
-            </div>
-            <div class="slide-nav-auto">
-                <div class="a-b1"></div>
-                <div class="a-b2"></div>
-                <div class="a-b3"></div>
-            </div>
-            <div class="nav m">
-              <label for="radio1" class="m-btn"></label>
-              <label for="radio1" class="m-btn"></label>
-              <label for="radio1" class="m-btn"></label>
+
+        <div id="navMenu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="../index.html">Inicio</a>
+                <a class="navbar-item" href="catalogo.html">Catalogo</a>
             </div>
         </div>
-      </div>
+    </nav>
+
+    <div class="title2 column is-4">
+        <figure class="image is-50x50">
+            <img src="../imagenes/logo.png" alt="Logo">
+        </figure>
+    </div>
+
+    <div id="carousel-demo" class="carousel ">
+        <div class="item item-1">
+            <!-- Slide Content -->
+             <img src="/img-home/img-sliders/bleach.jpeg" alt="">
+        </div>
+        <div class="item item-2">
+            <!-- Slide Content -->
+             <img src="/img-home/img-sliders/blue-lock.png" alt="">
+        </div>
+        <div class="item item-3">
+            <!-- Slide Content -->
+             <img src="/img-home/img-sliders/cahin.png" alt="">
+        </div>
+    </div>
+    <section class="section2 ">
+        <div class="title2 ">
+            <h2 class="is-size-4 ">LO MEJOR DE 2024</h2>
+        </div>
+        <div class="description ">
+            <p class="is-size-6 ">Descripción de los animes recientes</p>
+        </div>
+        <div class="imgs ">
+            <img src="/img-home/img-section/dandan.jpeg " alt=" ">
+            <img src="/img-home/img-section/ranman.webp " alt=" ">
+        </div>
     </section>
-    <section class="section2">
-      <div class="title2">
-        <h2 class="is-size-4">LO MEJOR DE 2024</h2>
-      </div>
-      <div class="description">
-          <p class="is-size-6">Descripción de los animes recientes</p>
-      </div>
-      <div class="imgs">
-        <img src="/img-home/img-section/dandan.jpeg" alt="">
-        <img src="/img-home/img-section/ranman.webp" alt="">
-      </div>
-    </section>
-    <script type="text/javacript">
-      var counter=1;
-      setInterval(funtion(){
-        
-      }
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgerIcon = document.querySelector('.navbar-burger');
+            const navbarMenu = document.querySelector('#navMenu');
+
+            burgerIcon.addEventListener('click', () => {
+                burgerIcon.classList.toggle('is-active');
+                navbarMenu.classList.toggle('is-active');
+            });
+        });
     </script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js "></script>
+    <script>
+        bulmaCarousel.attach('#carousel-demo', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            pagination: false,
+            breakpoints: [{
+                changePoint: 480,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }, {
+                changePoint: 640,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }, {
+                changePoint: 768,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }]
+        });
+    </script>
+</body>
+
+</html>
+
 </html>
