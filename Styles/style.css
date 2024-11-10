@@ -2,6 +2,7 @@
                                                                                                                 box-sizing: border-box;
                                                                                                             }
 
+<<<<<<< HEAD
                                                                                                             <<<<<<< HEAD body {
                                                                                                                 background-color: white;
                                                                                                             }
@@ -14,11 +15,39 @@
                                                                                                                     height: 4vw !important;
                                                                                                                     color: white !important;
                                                                                                                 }
+=======
+*{
+    box-sizing: border-box;
+}
+body{
+
+    background-color: rgb(255, 255, 255);
+}
+
+.title.is-2{
+    color: black;
+    font-size: 2.5vw;
+    background-color: white;
+}
+.navegacion{
+    color: black    ;
+}
+.navbar {
+background-color: #282248 !important;
+height: 4vw !important;
+color: white !important;
+}
+
+a.navbar-item:hover{
+    background-color: #7769c9 !important;
+}
+>>>>>>> 0a45ce61f0df7517a57bbfc4fa07ad106c7f2608
 
                                                                                                                 .navbar-item {
                                                                                                                     color: hsl(0deg 0% 100%) !important;
                                                                                                                 }
 
+<<<<<<< HEAD
                                                                                                                 .reseña_principal {
                                                                                                                     background-color: rgb(255, 90, 30);
                                                                                                                     height: 40vw;
@@ -40,6 +69,68 @@
                                                                                                                     position: relative;
                                                                                                                     top: 3vw;
                                                                                                                 }
+=======
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: hsl(249.47deg 35.85% 20.78%) !important;
+        box-shadow: 0 .5em 1em hsla(var(--bulma-scheme-h), var(--bulma-scheme-s), var(--bulma-scheme-invert-l), .1);
+        padding: .5rem 0;
+    }
+}
+/* empieza lo de reseña  */
+.anime{
+    color: rgb(0, 0, 0);
+}
+.card{
+    border: 1px solid black;
+}
+.content{
+    background-color: white;
+}
+.box{
+    width: 25%;
+    position: relative;
+    left: 72%;
+}
+.footer{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.title.is-1 {
+    font-size: 2em;
+    color: white;
+    z-index: 1;
+    position: relative;
+    left: 0px;
+}
+.title.is-5 {
+    font-size: 2em;
+    color: white;
+    z-index: 1;
+    position: relative;
+    left: 0px;
+    
+}
+/* termina parte reseña  */
+*{
+    box-sizing: border-box;
+}
+.carousel {
+    overflow: hidden;
+}
+
+@media(min-width:1492px){
+    .item {
+        height: 100vh;
+    }
+
+    .item img {
+        object-fit: cover;
+    }
+}
+}
+>>>>>>> 0a45ce61f0df7517a57bbfc4fa07ad106c7f2608
 
                                                                                                                 .subtitle {
                                                                                                                     grid-column: 2 / span 3;
@@ -53,6 +144,7 @@
                                                                                                                     border-radius: 1em;
                                                                                                                 }
 
+<<<<<<< HEAD
                                                                                                                 .mejores_capitulos {
                                                                                                                     background-color: rgb(204, 255, 0);
                                                                                                                     height: 50vw;
@@ -80,6 +172,15 @@
                                                                                                                     top: 5%;
                                                                                                                     border-radius: 1em;
                                                                                                                 }
+=======
+<<<<<<< HEAD
+=======
+
+
+.banner-catalogo {
+    position: relative;
+}
+>>>>>>> 0a45ce61f0df7517a57bbfc4fa07ad106c7f2608
 
                                                                                                                 .decripcion_capitulox {
                                                                                                                     width: 90%;
@@ -88,6 +189,7 @@
                                                                                                                     left: 6%;
                                                                                                                 }
 
+<<<<<<< HEAD
                                                                                                                 .box2 {
                                                                                                                     background-color: black;
                                                                                                                     width: 90%;
@@ -222,3 +324,12 @@
                                                                                                                 }
 
                                                                                                                 >>>>>>>479e19a (primer avance del diseño del pagina de catalogo)>>>>>>>b6a152d49a276b6cebf2f272a13d9c4ec78a89e2
+=======
+.galeria-catalogo{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3vw;
+
+}
+>>>>>>> eb69b2ec4ddde30df116830f738a8cab375244c5
+>>>>>>> 0a45ce61f0df7517a57bbfc4fa07ad106c7f2608

@@ -1,96 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
-  />
-  <link rel="stylesheet" href="../Styles/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="../Styles/style.css" />
+  <title>Document</title>
 </head>
 
 <body>
   <div class="contenedor_principal">
-    <nav class="navegacion">
-      <!-- navegacion que esta en todos las paginas  -->
-      nav menu o como sea esta para poner  lo que sea y su css tambien tiene su espacio 
+    <!--  barra de navegacion -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <div class="navbar-item">
+          <img src="../imagenes/logo.png" alt="Logo" style="width: 100px" />
+        </div>
+
+        <!-- Menu hamburguesa -->
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="../index.html">Inicio</a>
+          <a class="navbar-item" href="catalogo.html">Catalogo</a>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const burgerIcon = document.querySelector('.navbar-burger');
+          const navbarMenu = document.querySelector('#navMenu');
+
+          burgerIcon.addEventListener('click', () => {
+            burgerIcon.classList.toggle('is-active');
+            navbarMenu.classList.toggle('is-active');
+          });
+        });
+      </script>
     </nav>
+
     <section class="reseña_principal">
-      <h1 class="title is-1">
-        nombre del anime
-      </h1>
-      <div class="content"><figure class="image is-128x128">
-        <img src="../img-home/img-section/dandan.jpeg" />
-      </figure></div>
-      
-      <form class="box">
-        Bleach, un anime y manga creado por Tite Kubo, es una serie de acción y aventura que se centra en Ichigo Kurosaki, un adolescente que accidentalmente adquiere poderes de Shinigami (dios de la muerte) después de encontrarse con Rukia Kuchiki, una Shinigami que lucha contra espíritus malignos conocidos como Hollows. Con sus nuevos poderes, Ichigo se ve arrastrado al mundo de los espíritus, donde enfrenta batallas épicas y descubre un universo lleno de seres poderosos, traiciones y lealtades.
-          
-          La trama inicial de Bleach se enfoca en la misión de Ichigo de proteger a sus amigos y a la ciudad de Karakura de estos Hollows. Sin embargo, la historia evoluciona para incluir a personajes complejos y arcos narrativos como la “Saga de la Sociedad de Almas” y la “Saga de Hueco Mundo,” donde Ichigo y sus aliados deben enfrentarse a enemigos cada vez más poderosos, incluyendo a los Arrancar y al misterioso Sōsuke Aizen, un antagonista carismático y calculador. Estos arcos son populares por sus intensas escenas de combate y desarrollo de personajes secundarios, como Byakuya Kuchiki, Kenpachi Zaraki y el capitán Hitsugaya.
-          
-          Bleach es conocido por su estilo visual distintivo, con diseños de personajes llamativos y elaborados, así como un sistema de combate basado en habilidades únicas de cada Shinigami y Arrancar, como el uso del Bankai, una forma avanzada de sus espadas Zanpakutō. A pesar de recibir críticas por algunos arcos más largos, que incluían rellenos en el anime, la serie dejó una marca profunda en el género de acción y sigue siendo una influencia notable en la cultura del manga y anime.
-      </form>
-        <!-- <div class="texto_reseña1"> 
-          </div> -->
-    
-    <div class="mejores_capitulos">
-      <div class="columns gab is-1 ">
-        <div class="column "><div class="card">
-          <div class="card-image">
-            <figure class="image is-3by2 ">
-              <img src="https://bulma.io/assets/images/placeholders/256x256.png" />
-            </figure>
-          </div>
-            <div class="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-              iaculis mauris. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tempore eaque recusandae quis laudantium, ipsa dicta quod, molestiae ratione eius ducimus repellat. Optio sit asperiores quia soluta dolorum incidunt iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur tenetur dolores, reiciendis ad unde aut voluptatibus, incidunt error odit beatae ea vero officiis dolorum quod rerum, dolor dolore qui? Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ea quis quasi veritatis totam nemo, commodi tempore aperiam architecto neque? Illo, assumenda? Ex possimus sed dignissimos excepturi praesentium fugiat consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sequi, sit beatae eos culpa aut fuga quisquam omnis consequatur expedita dolores placeat veniam explicabo quod quidem facilis iusto quis nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repellat minus deserunt dignissimos soluta laudantium ipsum sed pariatur nobis quas, dolores, nulla porro explicabo distinctio ex consectetur. Voluptatibus, sequi laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sint vitae cupiditate, inventore id ut. Voluptates voluptatum sed quia sit quas ullam alias incidunt similique tempore, iure explicabo! Mollitia, voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem repellendus architecto soluta similique, nostrum dolor alias, ipsum veritatis eaque, unde odio! Eligendi iusto vitae unde hic ex nulla provident!
+      <h1 class="title is-2">nombre del anime</h1>
+      <div class="columns p-5 Gab is-2">
+        <div class="column">
+          <div class="card" style="border-radius: 10px; border: 2px solid black; overflow: hidden;">
+            <div class="card-image">
+              <figure class="image is-3by2">
+                <img src="../img-home/img-section/ranman.webp" />
+              </figure>
+            </div>
+            <div class="columns p-2 ">
+              <div class="column is-2 has-background-white has-text-black"></div>
+              <div class="column is-2 has-background-white has-text-black"></div>
+              <div class="column is-5 has-background-white has-text-black" >
+                <b>Genero:</b>Shonen,Fantacia,Artes
+                marciales,Romance, Comedia.
+              </div>
+              <div class="column is-4 has-background-white has-text-black">
+                <b>Calificación:</b>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+                  rel="stylesheet" />
+                <i class="fa-solid fa-star" style="color: #FFD700	" id="estrella"></i><i class="fa-solid fa-star"
+                  style="color: #FFD700	" id="estrella"></i><i class="fa-solid fa-star" style="color: #FFD700	"
+                  id="estrella"></i><i class="fa-solid fa-star" style="color: #FFD700	" id="estrella"></i><i
+                  class="fa-solid fa-star" style="color: #909497" id="estrella"></i>
+                <b>8/10</b>
+              </div>
             </div>
           </div>
         </div>
-        <div class="column ">
-          <div class="card">
-          <div class="card-image">
-            <figure class="image is-3by2 ">
-              <img src="https://bulma.io/assets/images/placeholders/256x256.png" />
-            </figure>
-          </div>
-            <div class="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-              iaculis mauris. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tempore eaque recusandae quis laudantium, ipsa dicta quod, molestiae ratione eius ducimus repellat. Optio sit asperiores quia soluta dolorum incidunt iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur tenetur dolores, reiciendis ad unde aut voluptatibus, incidunt error odit beatae ea vero officiis dolorum quod rerum, dolor dolore qui? Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ea quis quasi veritatis totam nemo, commodi tempore aperiam architecto neque? Illo, assumenda? Ex possimus sed dignissimos excepturi praesentium fugiat consequatur. xd xd 
+        <div class="column is-5">
+          <div class="card" style="border-radius: 10px; border: 2px solid black; overflow: hidden;">
+            <div class="content p-5">
+              <div class="subtitle is-6 has-background-white has-text-black">
+                Ranma ½ es una serie de manga y anime creada
+                por Rumiko Takahashi que combina comedia,
+                romance y artes marciales en una historia
+                única y muy divertida. La trama gira en
+                torno a Ranma Saotome, un joven artista
+                marcial que, debido a una maldición, se
+                transforma en chica cada vez que se moja con
+                agua fría. Para volver a su forma masculina,
+                necesita agua caliente, lo que genera un
+                sinfín de situaciones cómicas y enredos en
+                su vida cotidiana. Sinopsis Ranma y su
+                padre, Genma Saotome, también maldito (se
+                convierte en panda con agua fría), regresan
+                a Japón para cumplir un acuerdo matrimonial
+                entre Ranma y Akane Tendo, la hija menor del
+                dojo Tendo. Aunque Ranma y Akane no se
+                soportan al principio, su relación se va
+                desarrollando en medio de constantes
+                malentendidos, peleas y momentos de ternura,
+                sin que ninguno de los dos quiera admitir
+                sus verdaderos sentimientos. <br /><br />
+                A lo largo de la historia, nuevos personajes
+                se suman al caos, cada uno con habilidades
+                peculiares o maldiciones propias. Entre
+                ellos, destacan Ryoga Hibiki, eterno rival
+                de Ranma que se convierte en un cerdito;
+                Shampoo, una guerrera amazona que también
+                está enamorada de Ranma y se transforma en
+                gata; y Happosai, un maestro de artes
+                marciales pervertido que siempre está
+                causando problemas.
+                <br /><br />
+                Temas y Estilo La serie es famosa por sus
+                personajes excéntricos y por las situaciones
+                absurdas que surgen de las transformaciones.
+                Aborda temas de identidad, género y amor
+                juvenil de una manera ligera y humorística.
+                El estilo de humor físico, los
+                enfrentamientos y la comedia de enredos
+                románticos son elementos que han hecho que
+                Ranma ½ sea una serie atemporal.
+                <br />
+                ¿Por qué ver Ranma ½? Comedia única: La
+                premisa de las transformaciones es fuente de
+                muchos momentos graciosos e inesperados.
+                <br />
+                Personajes memorables: Cada personaje tiene
+                una personalidad marcada y un papel
+                importante en el desarrollo de la historia.
+                <br />
+                Equilibrio entre romance y acción: Aunque es
+                principalmente una comedia, Ranma ½ también
+                tiene momentos de romance sincero y combates
+                de artes marciales entretenidos. Conclusión
+                <br />
+                Ranma ½ es una serie divertida y original
+                que ha dejado una huella profunda en el
+                anime y manga. Su mezcla de comedia, romance
+                y acción, junto con personajes carismáticos
+                y situaciones absurdas, la convierte en una
+                obra perfecta para quienes buscan
+                entretenimiento ligero y personajes
+                entrañables. Aunque fue creada en los años
+                80, sigue siendo una de las comedias
+                románticas más queridas y recordadas en el
+                mundo del anime.
+              </div>
             </div>
           </div>
         </div>
-        <div class="column"><div class="card">
-          <div class="card-image">
-            <figure class="image is-3by2 ">
-              <img src="https://bulma.io/assets/images/placeholders/256x256.png" />
-            </figure>
-          </div>
-            <div class="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-              iaculis mauris. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tempore eaque recusandae quis laudantium, ipsa dicta quod, molestiae ratione eius ducimus repellat. Optio sit asperiores quia soluta dolorum incidunt iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur tenetur dolores, reiciendis ad unde aut voluptatibus, incidunt error odit beatae ea vero officiis dolorum quod rerum, dolor dolore qui? Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ea quis quasi veritatis totam nemo, commodi tempore aperiam architecto neque? Illo, assumenda? Ex possimus sed dignissimos excepturi praesentium fugiat consequatur.
+      </div>
+
+      <div class="mejores_capitulos ">
+        <h2 class="title is-2">Mejores capitulos</h2>
+        <div class="columns p-5 gab is-1">
+          <div class="column">
+            <div class="card" style="border-radius: 10px; border: 2px solid black; overflow: hidden;">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="../img-home/img-section/ranman.webp" />
+                </figure>
+              </div>
+              <div class="content has-background-white has-text-black">
+                <div class="content p-3 has-background-white has-text-black">
+                  <h1 class="title is-1 has-background-white has-text-black">
+                    "¿Quién es más guapo? Ranma
+                    contra Ryoga
+                  </h1>
+                  <br />
+                  <h2 class="has-background-white has-text-black">Temporada:1x7</h2>
+                </div>
+                <div class="content p-4">
+                  Es el episodio donde se introduce a
+                  Ryoga Hibiki, el eterno rival de Ranma,
+                  y donde comienza su icónica rivalidad.
+                  Este capítulo establece una relación
+                  crucial que sigue siendo importante
+                  durante toda la serie.
+                </div>
+              </div>
             </div>
-          </div></div>
-        
+          </div>
+          <div class="column">
+            <div class="card" style="border-radius: 10px; border: 2px solid black; overflow: hidden;">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="../img-home/img-section/ranman.webp" />
+                </figure>
+              </div>
+              <div class="content has-background-white has-text-black">
+                <div class="content p-3 ">
+                  <h1 class="title is-1 has-background-white has-text-black">
+                    "¿Quién es más guapo? Ranma
+                    contra Ryoga
+                  </h1>
+                  <br />
+                  <h2 class="has-background-white has-text-black">Temporada:1x7</h2>
+                </div>
+                <div class="content p-4">
+                  Es el episodio donde se introduce a
+                  Ryoga Hibiki, el eterno rival de Ranma,
+                  y donde comienza su icónica rivalidad.
+                  Este capítulo establece una relación
+                  crucial que sigue siendo importante
+                  durante toda la serie.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card" style="border-radius: 10px; border: 2px solid black; overflow: hidden;">
+              <div class="card-image">
+                <figure class="image is-3by2">
+                  <img src="../img-home/img-section/ranman.webp" />
+                </figure>
+              </div>
+              <div class="content has-background-white has-text-black">
+                <div class="content p-3">
+                  <h1 class="title is-1 has-background-white has-text-black">
+                    "¿Quién es más guapo? Ranma
+                    contra Ryoga
+                  </h1>
+                  <br>
+                  <h2 class="has-background-white has-text-black">Temporada:1x7</h2>
+                </div>
+                <div class="content p-4">
+                  Es el episodio donde se introduce a
+                  Ryoga Hibiki, el eterno rival de Ranma,
+                  y donde comienza su icónica rivalidad.
+                  Este capítulo establece una relación
+                  crucial que sigue siendo importante
+                  durante toda la serie.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-      <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
-            The source code is licensed
-            <a href="https://opensource.org/license/mit">MIT</a>. The
-            website content is licensed
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//"
-              >CC BY NC SA 4.0</a
-            >.
+      <footer class="footer has-background-white has-text-black">
+        <div class="content has-text-centered has-background-white has-text-black">
+          <p class="is-size-5">
+            <strong class="anime">Ani-Rank</strong> © 2024. Todos los derechos reservados.
           </p>
+          <div class="social-icons">
+            <a href="https://facebook.com" class="icon is-large has-text-black" style="margin: 0 10px;">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="icon is-large has-text-black" style="margin: 0 10px;">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" class="icon is-large has-text-black" style="margin: 0 10px;">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </footer>
     </section>
   </div>
 </body>
-</html>
 
+</html>
