@@ -3,12 +3,158 @@
     box-sizing: border-box;
 }
 body{
+<<<<<<< HEAD
     background-color: rgb(255, 255, 255);
 }
 
 .title.is-2{
     color: black;
     font-size: 2.5vw;
+=======
+    background-color: white;
+}
+.navegacion{
+    color: black    ;
+}
+.navbar {
+background-color: #282248 !important;
+height: 4vw !important;
+color: white !important;
+}
+
+a.navbar-item:hover{
+    background-color: #7769c9 !important;
+}
+
+.navbar-item {
+    color: hsl(0deg 0% 100%) !important;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: hsl(249.47deg 35.85% 20.78%) !important;
+        box-shadow: 0 .5em 1em hsla(var(--bulma-scheme-h), var(--bulma-scheme-s), var(--bulma-scheme-invert-l), .1);
+        padding: .5rem 0;
+    }
+}
+
+.reseña_principal{
+    background-color: rgb(255, 90, 30);
+    height: 40vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.box{
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    position: relative;
+    left: 2vw;
+    top: 6vw;
+}
+.title{
+    grid-column: 3;
+    position: relative;
+    top: 3vw;
+}
+.subtitle{
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 2;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    left: 5vw;
+    top: -6vw;
+    border-radius: 1em;
+}
+.mejores_capitulos{
+    background-color: rgb(204, 255, 0);
+    height: 50vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+}
+.box1{
+    
+    background-color: black;
+    width: 90%;
+    height: 90%;
+    border-radius: 1em;
+    position: relative;
+    left: 1.5vw;
+    top: 2.5vw;
+}
+.imagen_capitulox{
+    background-color: white;
+    width: 90%;
+    height: 50%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    border-radius: 1em;
+}
+.decripcion_capitulox{
+    width: 90%;
+    position: relative;
+    top: 7%;
+    left: 6%;
+}
+.box2{
+    
+    background-color: black;
+    width: 90%;
+    height: 90%;
+    border-radius: 1em;
+    position: relative;
+    left: 1.5vw;
+    top: 2.5vw;
+}
+.imagen_capituloxx{
+    background-color: white;
+    width: 90%;
+    height: 50%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    border-radius: 1em;
+}
+.decripcion_capituloxx{
+    width: 90%;
+    position: relative;
+    top: 7%;
+    left: 6%;
+}
+.box3{
+    
+    background-color: black;
+    width: 90%;
+    height: 90%;
+    border-radius: 1em;
+    position: relative;
+    left: 1.5vw;
+    top: 2.5vw;
+}
+.imagen_capituloxxx{
+    background-color: white;
+    width: 90%;
+    height: 50%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    border-radius: 1em;
+}
+.decripcion_capituloxxx{
+    width: 90%;
+    position: relative;
+    top: 7%;
+    left: 6%;
+}
+
+.title{
+>>>>>>> eb69b2ec4ddde30df116830f738a8cab375244c5
     position: relative;
     top: 2vw;
     left: 40vw;
@@ -46,6 +192,10 @@ body{
     left: 0px;
     
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> eb69b2ec4ddde30df116830f738a8cab375244c5
 *{
     box-sizing: border-box;
 }
@@ -142,3 +292,46 @@ body{
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+.banner-catalogo {
+    position: relative;
+}
+
+.informacion-catalogo{
+    position: absolute;
+    top: 36%;
+    left: 31%;
+    font-size: 3vw;
+    font-weight: 300;
+    background-color: #0000008c;
+    width: 40%;
+    height: 58%;
+    border-radius: 13px;
+}
+.banner-catalogo h1{
+    color: white;
+    position: absolute;
+    top: 28%;
+    left: 41%;
+    font-size: 5vw;
+    font-weight: 500;
+}
+.banner-catalogo p{
+    color: white;
+    position: absolute;
+    top: 67%;
+    left: 39%;
+    font-size: 2.1vw;
+    font-weight: 300;
+}
+
+.galeria-catalogo{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3vw;
+
+}
+>>>>>>> eb69b2ec4ddde30df116830f738a8cab375244c5
