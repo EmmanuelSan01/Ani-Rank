@@ -1,4 +1,21 @@
+                                                                                                            * {
+                                                                                                                box-sizing: border-box;
+                                                                                                            }
 
+<<<<<<< HEAD
+                                                                                                            <<<<<<< HEAD body {
+                                                                                                                background-color: white;
+                                                                                                            }
+
+                                                                                                            .navegacion {
+                                                                                                                color: black;
+
+                                                                                                                =======.navbar {
+                                                                                                                    background-color: #282248 !important;
+                                                                                                                    height: 4vw !important;
+                                                                                                                    color: white !important;
+                                                                                                                }
+=======
 *{
     box-sizing: border-box;
 }
@@ -24,11 +41,35 @@ color: white !important;
 a.navbar-item:hover{
     background-color: #7769c9 !important;
 }
+>>>>>>> 0a45ce61f0df7517a57bbfc4fa07ad106c7f2608
 
-.navbar-item {
-    color: hsl(0deg 0% 100%) !important;
-}
+                                                                                                                .navbar-item {
+                                                                                                                    color: hsl(0deg 0% 100%) !important;
+                                                                                                                }
 
+<<<<<<< HEAD
+                                                                                                                .reseña_principal {
+                                                                                                                    background-color: rgb(255, 90, 30);
+                                                                                                                    height: 40vw;
+                                                                                                                    display: grid;
+                                                                                                                    grid-template-columns: repeat(4, 1fr);
+                                                                                                                    grid-template-rows: repeat(3, 1fr);
+                                                                                                                }
+
+                                                                                                                .box {
+                                                                                                                    grid-column: 1;
+                                                                                                                    grid-row: 1 / span 2;
+                                                                                                                    position: relative;
+                                                                                                                    left: 2vw;
+                                                                                                                    top: 6vw;
+                                                                                                                }
+
+                                                                                                                .title {
+                                                                                                                    grid-column: 3;
+                                                                                                                    position: relative;
+                                                                                                                    top: 3vw;
+                                                                                                                }
+=======
 
 @media screen and (max-width: 1023px) {
     .navbar-menu {
@@ -87,25 +128,10 @@ a.navbar-item:hover{
 *{
     box-sizing: border-box;
 }
-.inicio{
-    background-color: #282248;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-inicio{
-    display: flex;
-    gap:  50px;
-}
-.banner{
-    animation: slide 15s infinite alternate ease-in-out;
-    position: relative;
-    max-width: 1980px;
-    max-height: 1980px;
-    margin: 0 auto;
+.carousel {
     overflow: hidden;
 }
+<<<<<<< HEAD
 .slide{
     width: 500%;
     height: 500px;
@@ -178,41 +204,223 @@ a.navbar-item:hover{
 #radio-3:checked ~.slide-nav-auto .a-b3{
     background-color: #23e3c2;
 }
+=======
+
+@media(min-width:1492px){
+    .item {
+        height: 100vh;
+    }
+
+    .item img {
+        object-fit: cover;
+    }
+}
+}
+>>>>>>> 0a45ce61f0df7517a57bbfc4fa07ad106c7f2608
+
+                                                                                                                .subtitle {
+                                                                                                                    grid-column: 2 / span 3;
+                                                                                                                    grid-row: 2 / span 2;
+                                                                                                                    background-color: white;
+                                                                                                                    width: 90%;
+                                                                                                                    height: 90%;
+                                                                                                                    position: relative;
+                                                                                                                    left: 5vw;
+                                                                                                                    top: -6vw;
+                                                                                                                    border-radius: 1em;
+                                                                                                                }
+
+<<<<<<< HEAD
+                                                                                                                .mejores_capitulos {
+                                                                                                                    background-color: rgb(204, 255, 0);
+                                                                                                                    height: 50vw;
+                                                                                                                    display: grid;
+                                                                                                                    grid-template-columns: repeat(3, 1fr);
+                                                                                                                    grid-template-rows: repeat(1, 1fr);
+                                                                                                                }
+
+                                                                                                                .box1 {
+                                                                                                                    background-color: black;
+                                                                                                                    width: 90%;
+                                                                                                                    height: 90%;
+                                                                                                                    border-radius: 1em;
+                                                                                                                    position: relative;
+                                                                                                                    left: 1.5vw;
+                                                                                                                    top: 2.5vw;
+                                                                                                                }
+
+                                                                                                                .imagen_capitulox {
+                                                                                                                    background-color: white;
+                                                                                                                    width: 90%;
+                                                                                                                    height: 50%;
+                                                                                                                    position: relative;
+                                                                                                                    left: 5%;
+                                                                                                                    top: 5%;
+                                                                                                                    border-radius: 1em;
+                                                                                                                }
+=======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> a839348216589af04bd989d0eef2269966a7c1b0
 .banner-catalogo {
     position: relative;
 }
+>>>>>>> 0a45ce61f0df7517a57bbfc4fa07ad106c7f2608
 
-.informacion-catalogo{
-    position: absolute;
-    top: 36%;
-    left: 31%;
-    font-size: 3vw;
-    font-weight: 300;
-    background-color: #0000008c;
-    width: 40%;
-    height: 58%;
-    border-radius: 13px;
-}
-.banner-catalogo h1{
-    color: white;
-    position: absolute;
-    top: 28%;
-    left: 41%;
-    font-size: 5vw;
-    font-weight: 500;
-}
-.banner-catalogo p{
-    color: white;
-    position: absolute;
-    top: 67%;
-    left: 39%;
-    font-size: 2.1vw;
-    font-weight: 300;
-}
+                                                                                                                .decripcion_capitulox {
+                                                                                                                    width: 90%;
+                                                                                                                    position: relative;
+                                                                                                                    top: 7%;
+                                                                                                                    left: 6%;
+                                                                                                                }
 
+<<<<<<< HEAD
+                                                                                                                .box2 {
+                                                                                                                    background-color: black;
+                                                                                                                    width: 90%;
+                                                                                                                    height: 90%;
+                                                                                                                    border-radius: 1em;
+                                                                                                                    position: relative;
+                                                                                                                    left: 1.5vw;
+                                                                                                                    top: 2.5vw;
+                                                                                                                }
+
+                                                                                                                .imagen_capituloxx {
+                                                                                                                    background-color: white;
+                                                                                                                    width: 90%;
+                                                                                                                    height: 50%;
+                                                                                                                    position: relative;
+                                                                                                                    left: 5%;
+                                                                                                                    top: 5%;
+                                                                                                                    border-radius: 1em;
+                                                                                                                }
+
+                                                                                                                .decripcion_capituloxx {
+                                                                                                                    width: 90%;
+                                                                                                                    position: relative;
+                                                                                                                    top: 7%;
+                                                                                                                    left: 6%;
+                                                                                                                }
+
+                                                                                                                .box3 {
+                                                                                                                    background-color: black;
+                                                                                                                    width: 90%;
+                                                                                                                    height: 90%;
+                                                                                                                    border-radius: 1em;
+                                                                                                                    position: relative;
+                                                                                                                    left: 1.5vw;
+                                                                                                                    top: 2.5vw;
+                                                                                                                }
+
+                                                                                                                .imagen_capituloxxx {
+                                                                                                                    background-color: white;
+                                                                                                                    width: 90%;
+                                                                                                                    height: 50%;
+                                                                                                                    position: relative;
+                                                                                                                    left: 5%;
+                                                                                                                    top: 5%;
+                                                                                                                    border-radius: 1em;
+                                                                                                                }
+
+                                                                                                                .decripcion_capituloxxx {
+                                                                                                                    width: 90%;
+                                                                                                                    position: relative;
+                                                                                                                    top: 7%;
+                                                                                                                    left: 6%;
+                                                                                                                    >>>>>>>d9e461f1150fc9d59074d125b0d89dc7031ac34a
+                                                                                                                }
+
+                                                                                                                .title {
+                                                                                                                    position: relative;
+                                                                                                                    top: 2vw;
+                                                                                                                    left: 40vw;
+                                                                                                                }
+
+                                                                                                                .columns {
+                                                                                                                    padding: 10px;
+                                                                                                                }
+
+                                                                                                                .box {
+                                                                                                                    width: 25%;
+                                                                                                                    position: relative;
+                                                                                                                    left: 72%;
+                                                                                                                }
+
+                                                                                                                .footer {
+                                                                                                                    background-color: rgb(255, 255, 255);
+                                                                                                                    color: black;
+                                                                                                                }
+
+                                                                                                                <<<<<<< HEAD * {
+                                                                                                                    box-sizing: border-box;
+                                                                                                                }
+
+                                                                                                                .carousel {
+                                                                                                                    overflow: hidden;
+                                                                                                                }
+
+                                                                                                                @media(min-width:1492px){
+                                                                                                                    .item {
+                                                                                                                        height: 100vh;
+                                                                                                                    }
+
+                                                                                                                    .item img {
+                                                                                                                        object-fit: cover;
+                                                                                                                    }
+                                                                                                                }
+
+                                                                                                                =======.banner-catalogo {
+                                                                                                                    position: relative;
+                                                                                                                }
+
+                                                                                                                .informacion-catalogo {
+                                                                                                                    position: absolute;
+                                                                                                                    top: 36%;
+                                                                                                                    left: 31%;
+                                                                                                                    font-size: 3vw;
+                                                                                                                    font-weight: 300;
+                                                                                                                    background-color: #0000008c;
+                                                                                                                    width: 40%;
+                                                                                                                    height: 58%;
+                                                                                                                    border-radius: 13px;
+                                                                                                                }
+
+                                                                                                                .banner-catalogo h1 {
+                                                                                                                    color: white;
+                                                                                                                    position: absolute;
+                                                                                                                    top: 28%;
+                                                                                                                    left: 41%;
+                                                                                                                    font-size: 5vw;
+                                                                                                                    font-weight: 500;
+                                                                                                                }
+
+                                                                                                                .banner-catalogo p {
+                                                                                                                    color: white;
+                                                                                                                    position: absolute;
+                                                                                                                    top: 67%;
+                                                                                                                    left: 39%;
+                                                                                                                    font-size: 2.1vw;
+                                                                                                                    font-weight: 300;
+                                                                                                                }
+
+                                                                                                                .galeria-catalogo {
+                                                                                                                    width: 80%;
+                                                                                                                    margin: 0 auto;
+                                                                                                                }
+
+                                                                                                                >>>>>>>479e19a (primer avance del diseño del pagina de catalogo)>>>>>>>b6a152d49a276b6cebf2f272a13d9c4ec78a89e2
+=======
 .galeria-catalogo{
     width: 80%;
     margin: 0 auto;
     margin-top: 3vw;
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> eb69b2ec4ddde30df116830f738a8cab375244c5
+>>>>>>> 0a45ce61f0df7517a57bbfc4fa07ad106c7f2608
+>>>>>>> a839348216589af04bd989d0eef2269966a7c1b0
