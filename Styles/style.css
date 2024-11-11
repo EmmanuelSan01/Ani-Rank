@@ -63,6 +63,15 @@ a.navbar-item:hover{
     position: relative;
     left: 0px;
 }
+.title.is-2 {
+    color: #000000;
+    font-size: 2.5vw;
+    background-color: #ffffff;
+    position: relative;
+    left: 40vw;
+    top: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .title.is-5 {
     font-size: 2em;
     color: white;
@@ -70,6 +79,9 @@ a.navbar-item:hover{
     position: relative;
     left: 0px;
     
+}
+.textarea.is-info{
+    width: 80vw;
 }
 /* termina parte reseña  */
 *{
@@ -166,12 +178,6 @@ a.navbar-item:hover{
 #radio-3:checked ~.slide-nav-auto .a-b3{
     background-color: #23e3c2;
 }
-
-
-<<<<<<< HEAD
-=======
-
-
 .banner-catalogo {
     position: relative;
 }
@@ -210,4 +216,3 @@ a.navbar-item:hover{
     margin-top: 3vw;
 
 }
->>>>>>> eb69b2ec4ddde30df116830f738a8cab375244c5
