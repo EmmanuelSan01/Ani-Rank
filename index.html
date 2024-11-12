@@ -1,104 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="/Styles/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="Styles\style.css">
     <title>Home</title>
-</head>
-<body class="has-background-white">
-    <!--  barra de navegacion -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <div class="navbar-item">
-                <img src="../imagenes/logo.png" alt="Logo" style="width: 100px;">
-            </div>
+  </head>
+  <body class="has-background-white">
+     <!--  barra de navegacion -->
+     <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+          <div class="navbar-item">
+              <img src="../imagenes/logo.png" alt="Logo" style="width: 100px;">
+          </div>
 
-            <!-- Menu hamburguesa -->
-            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+          <!-- Menu hamburguesa -->
+          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+          </a>
+      </div>
+
+      <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">
+              <a class="navbar-item" href="../index.html">Inicio</a>
+              <a class="navbar-item" href="catalogo.html">Catalogo</a>
+              <a class="navbar-item" href="reseñas.html">Reseñas</a>
+          </div>
+      </div>
+  </nav>
+  <div class="columns is-vcentered is-centered" style="height: 15vh;">
+      <div class="column has-text-centered">
+        <img src="../imagenes/logo.png" alt="Logo">
+      </div>
+    </div>
+
+    <div class="slider-frame">
+      <ul>
+          
+          <li><img src="img-home\img-sliders\male-anime-characters-epic-poster-3n4npfwcc130bqcg.jpg" alt=""></li>
+          <li><img src="img-home\img-sliders\thumb-1920-833315.jpg" alt=""></li>
+          <li><img src="img-home\img-sliders\male-anime-characters-epic-poster-3n4npfwcc130bqcg.jpg" alt=""></li>
+          <li><img src="img-home\img-sliders\epic-anime-m53wgx8b62vojp9t.jpg" alt=""></li>
+      </ul>
+  </div>
+
+  <style>
+    h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.slider-frame {
+	width: 95%;
+  height: 740px;
+	margin:50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+  </style>
+
+
+
+    <br><br><br><br><br><br><BR>
+    <section class="section2">
+       <div class="column is-offset-1 is-10">
+         <h1 class="title has-text-centered is-1 is-spaced">LO MEJOR DEL 2024</h1>
+         <h2 class="title has-text-centered is-size-4 is-sapced">DANDANAN</h2>
+       </div>
+       <br><br><br>
+       <br><br>
+
+       
+
+      <div class="columns">
+        
+
+        <div class="column is-3 is-offset-1">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img
+                  src="img-home\img-section\dandan.jpeg"
+                  alt="Placeholder image"
+                />
+              </figure>
+            </div>
+            <br>
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img
+                src="img-home\img-section\img-proyecto-sec2.jpeg"
+                alt="Placeholder image"
+              />
+            </figure>
+          </div>
         </div>
 
-        <div id="navMenu" class="navbar-menu">
-            <div class="navbar-end">
-                <a class="navbar-item" href="../index.html">Inicio</a>
-                <a class="navbar-item" href="paginas/catalogo.html">Catalogo</a>
+
+        <div class="column">
+
+          
+
+          <div class="card">
+            <div class="card-content">
+              <div class=" subtitle is-4 content">
+                <h1>¡El Coloso del Manga de 2024 que Arrasó con Todo!</h1><br><br><bR><br><br>
+
+                En un año lleno de ambiciosas apuestas, donde los gigantes del manga intentan elevarse a nuevas alturas, Dandadan no solo es el mejor manga de la década<bR><br><br>
+                
+                En este monumental relato, los cielos tiemblan y la tierra cruje cuando Momo Ayase, la guerrera indomable con un espíritu tan feroz como el fuego de un volcán, y Okarun, un joven sin miedo a lo imposible, se ven arrastrados a una guerra cósmica contra:<br><br> monstruos interdimensionales, alienígenas poseídos por demonios y entidades que desafían la propia existencia del espacio-tiempo.<bR><bR> A medida que los dos se sumergen más y más en un torbellino de caos y acción desenfrenada, cada página se convierte en una batalla por la supervivencia, pero también en una celebración gloriosa de lo imposible.<bR>
+                
+                
+                2024 ha sido testigo de muchas historias que han intentado dejar su huella, pero ninguna de ellas ha logrado lo que Dandadan ha hecho.revolucionar el manga como lo conocemos . Este
+                
+                Si aún no lo has leído, hazlo ahora. No es solo una recomendación: es una orden cósmica.<bR><br>
+
+                  <button class="button is-primary">Más Info -></button>
+
+              </div>
             </div>
+          </div>
+
+
+
+   
+
         </div>
-    </nav>
-    <div class="columns is-vcentered is-centered" style="height: 15vh;">
-        <div class="column has-text-centered">
-          <img src="../imagenes/logo.png" alt="Logo">
+        <div class="column is-1"></div>
+        <div class="column is-1"></div>
+      </div>
+
+
+
+
+    
+       <br><br><br><br><br><br><br><br>
+
+
+       <style>
+        article {
+
+          padding: 5%;
+          background-color: #dddce7cc;
+          box-decoration-break: clone;
+
+        }
+
+        
+       </style>
+
+      <article class="media">
+      <figure class="media-left">
+        <p class="image is-64x64">
+          <img src="img-home\img-section\img-proyec.png" />
+         </p>
+       </figure>
+
+
+     
+
+
+        
+
+        
+       <div class="media-content">
+        <div class="content subtitle is-4">
+           <p>
+             <strong>Carlos Rueda</strong>
+              <br />
+              ¡Dandanan es una joya! Este grupo fusiona géneros como el pop, el indie y la electrónica con una vibración única que te envuelve desde el primer acorde.
+              <br />
+              <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+           </p>
+         </div>
+      
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-48x48">
+                <img src="img-home\img-section\img-proyect2.jpeg" />
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content subtitle  is-4">
+                <p>
+                  <strong>Richie Rey</strong>
+                  <br />
+                  Aunque Dandanan tiene una propuesta interesante y una energía refrescante, en algunos momentos su sonido puede sentirse un tanto repetitivo. A veces, las canciones siguen una fórmula predecible, lo que puede hacer que el álbum pierda fuerza conforme avanza.
+                  <br />
+                  <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+                </p>
+              </div>
+      
+              <article class="media subtitle is-4">
+                Si alguien me hubiera dicho que podía hacer una mezcla tan increíble entre espíritus, extraterrestres, monstruos sobrenaturales y humor a raudales, probablemente lo habría llamado loco
+              </article>
+      
+              <article class="media">
+                Morbi vitae diam et purus tincidunt porttitor vel vitae augue.
+                Praesent malesuada metus sed pharetra euismod. Cras tellus odio,
+                tincidunt iaculis diam non, porta aliquet tortor.
+              </article>
+            </div>
+          </article>
+      
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-48x48">
+                <img src="img-home\img-section\img-proyecto-4.jpeg" />
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content subtitle is-4">
+                <p>
+                  <strong>Santiago Cruz </strong>
+                  <br />
+                  Si algo tengo claro es que Momo y Ken son un par de personajes que jamás olvidaré. Desde el principio, Momo es una chica fuerte, un tanto testaruda, pero con una sensibilidad tan real que te hace sentir como si estuvieras viendo a tu amiga enfrentarse al mundo de lo imposible
+                  <br />
+                  <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </article>
+      
+      <article class="media">
+        <figure class="media-left">
+          <p class="image is-64x64">
+            <img src="img-home\img-section\logo-facebook-proyecto.webp" />
+          </p>
+        </figure>
+        <div class="media-content">
+          <div class="field">
+            <p class="control">
+              <textarea class="textarea" placeholder="Add a comment..."></textarea>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control">
+              <button class="button">Post comment</button>
+            </p>
+          </div>
+        </div>
+      </article>
+     
+    </section>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+
+    <style>
+      .section-3 {
+
+      background-color:#d0cce9cc;  
+
+
+
+      }
+
+     
+    </style>
+
+    <section class="section-3">
+
+      <h1 class="title has-text-centered is-1  is-spaced">NUEVOS LANZAMIENTOS</h1>
+      <div class="container is-fluid">
+        <div class="notification has-background-inherit">
+              <div class="columns">
+                <div class="column">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img
+                          src="img-home\img-section\DEFINIT.jpg"
+                          alt="Placeholder image"
+                        />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                          <figure class="image is-48x48">
+                            <img
+                              src="img-home\img-section\3.3.png"
+                              alt="Placeholder image"
+                            />
+                          </figure>
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-3">zoom 100</p>
+                          <p class="subtitle is-6"></p>
+                        </div>
+                      </div>
+                  
+                      <div class="content subtitle">
+                        <strong>Estreno: 9 de enero de 2024 (Japón)</strong><br>
+                          <strong>Estudio: BUG FILMS</strong><br>
+                          <strong>Género: Acción, Comedia, Horror, Sobrenatural</strong><br>
+                          <br><br><br>
+
+                          Zoom 100 es una de las adaptaciones más esperadas para el 2024, basada en el manga de Haro Aso y Koutarou Takata. La historia sigue a Akira Tendo, un joven empleado de oficina que, tras el brote de un apocalipsis zombi, ve la oportunidad de hacer realidad su lista de deseos y vivir su vida al máximo sin las presiones del trabajo. Si buscas una mezcla de comedia y horror con toques de acción épica, Zom 100 será un imprescindible.<br><bR>
+                            <button class="button is-primary">Más Info -></button>
+                        <a href="#"></a>
+                        <br />
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img
+                          src="img-home\img-section\proyecto-sec-3.jpg"
+                          alt="Placeholder image"
+                        />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                          <figure class="image is-48x48">
+                            <img
+                              src="img-home\img-section\4.1.png"
+                              alt="Placeholder image"
+                            />
+                          </figure>
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-3">Jujutsu Kaisen (Temporada 2, Parte 2)
+                          </p>
+                          <p class="subtitle is-6"></p>
+                        </div>
+                      </div>
+                  
+                      <div class="content subtitle">
+                          <strong>Estreno: 2024</strong><br>
+                          <strong>Estudio: MAPPA</strong><br>
+                          <strong>Género: Acción, Sobrenatural, Oscuro</strong><br>
+                          <br><br><br>
+
+                          La segunda temporada de Jujutsu Kaisen no necesita mucha presentación. El 2024 nos trae la segunda parte de la temporada 2, con la adaptación del arco de Shibuya Incident, que promete llevar la acción y la violencia a niveles estratosféricos. Los fans del shonen oscuro y espectacular pueden esperar más peleas épicas y revelaciones de alto voltaje. ¡Es hora de que los hechiceros luchadores de maldiciones se enfrenten a su destino!<br><br>
+                          <button class="button is-primary">Más Info -></button> 
+                        <a href="#"></a>
+                        <br />
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img
+                          src="img-home\img-section\img-proyect-sec-3.jpg"
+                          alt="Placeholder image"
+                        />
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-left">
+                          <figure class="image is-48x48">
+                            <img
+                              src="img-home\img-section\2.8.png"
+                              alt="Placeholder image"
+                            />
+                          </figure>
+                        </div>
+                        <div class="media-content">
+                          <p class="title is-3">Kubo Won't Let Me Be Invisible (Temporada 1)</p>
+                          <p class="subtitle is-6"></p>
+                        </div>
+                      </div>
+                  
+                      <div class="content subtitle">
+                          <strong>Estreno: 2024</strong><br>
+                          <strong>Estudio: Pine Jam</strong><br>
+                         <strong> Género: Romance, Comedia, Sobrenatural</strong><br><br><br>
+
+                          Adaptación del popular manga de Nene Yukimori, esta serie se centra en Shiraishi Kubo, un joven que es invisible para todos a su alrededor, hasta que se cruza con Kubo, una chica que puede verlo y hace todo lo posible para que no pase desapercibido. Es un anime perfecto para los amantes de las historias románticas con una dosis de comedia ligera.<br><bR>
+                            <button class="button is-primary">Más Info -></button>
+
+ 
+                        <a href="#"></a>
+                       
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
-<!-- Slide o Carrusel-->
-    <div id="carousel-demo" class="carousel ">
-        <div class="item item-1">
-            <!-- Slide Content -->
-             <img src="/img-home/img-sliders/bleach.jpeg" alt="">
-        </div>
-        <div class="item item-2">
-            <!-- Slide Content -->
-             <img src="/img-home/img-sliders/blue-lock.png" alt="">
-        </div>
-        <div class="item item-3">
-            <!-- Slide Content -->
-             <img src="/img-home/img-sliders/cahin.png" alt="">
-        </div>
-    </div>
-    <section class="section2 ">
-        <div class="title2 ">
-            <h2 class="is-size-4 ">LO MEJOR DE 2024</h2>
-        </div>
-        <div class="description ">
-            <p class="is-size-6 ">Descripción de los animes recientes</p>
-        </div>
-        <div class="imgs ">
-            <img src="/img-home/img-section/dandan.jpeg " alt=" ">
-            <img src="/img-home/img-section/ranman.webp " alt=" ">
-        </div>
+
+
+
+     
+   
+
+
     </section>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const burgerIcon = document.querySelector('.navbar-burger');
-            const navbarMenu = document.querySelector('#navMenu');
+    <BR><BR><BR>
 
-            burgerIcon.addEventListener('click', () => {
-                burgerIcon.classList.toggle('is-active');
-                navbarMenu.classList.toggle('is-active');
-            });
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js "></script>
-    <script>
-        bulmaCarousel.attach('#carousel-demo', {
-            slidesToScroll: 1,
-            slidesToShow: 1,
-            pagination: false,
-            breakpoints: [{
-                changePoint: 480,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }, {
-                changePoint: 640,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }, {
-                changePoint: 768,
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }]
-        });
-    </script>
-</body>
+    <div class="container is-fluid">
+      <div class="notification has-background-inherit">
+        <h1 class="title has-text-centered is-1 is-spaced">Contacto</h1>
+        <br>
+          <div class="columns">
+              <div class="column">
 
-</html>
+              </div>
+              <div class="column"></div>
+              <div class="column"></div>
+              <div class="column"></div>
+              <div class="column">
+                <figure class="image is-64x64">
+                  <img class="is-rounded" src="img-home\img-section\gitlab-icon-1024x942-f30d1qro.png" />
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image is-64x64">
+                  <img class="is-rounded" src="img-home\img-section\logo-ins-2.webp" />
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image is-64x64">
+                  <img class="is-rounded" src="img-home\img-section\logo-facebook-proyecto.webp" />
+                </figure>
+              </div>
+              <div class="column">
+                <figure class="image is-64x64">
+                  <img class="is-rounded" src="img-home\img-section\4202011emailgmaillogomailsocialsocialmedia-115677_115624.webp" />
+                </figure>
+              </div>
+              <div class="column"></div>
+              <div class="column"></div>
+              <div class="column"></div>
+              <div class="column"></div>
+          </div>
+          
+              
+          
+      </div>
+    </div>
 
+    
+    
+
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>ANIME-RATE</strong> by DINO TEAM<a href="https://jgthms.com"> Enterprices</a>.
+          The source code is licensed
+          <a href="https://opensource.org/license/mit">MIT</a>. The
+          website content is licensed
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//"
+            >CC BY NC SA 4.0</a
+          >.
+        </p>
+      </div>
+    </footer>
+
+  </body>
 </html>
